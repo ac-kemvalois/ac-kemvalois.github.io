@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Académie KemValois</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="forum">
+        <h2>Discussions</h2>
+        <div id="posts"></div>
+        <h3>Créer un Post</h3>
+        <form id="post-form">
+            <label for="post-title">Titre :</label>
+            <input type="text" id="post-title" required>
+            <label for="post-content">Contenu :</label>
+            <textarea id="post-content" required></textarea>
+            <button type="submit">Publier</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Académie KemValois. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
