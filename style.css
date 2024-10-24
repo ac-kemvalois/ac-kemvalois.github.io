@@ -1,76 +1,118 @@
 * {
+Voici la suite du code CSS et le code JavaScript pour compléter le site de l'Académie KemValois :
+
+### Fichier CSS (style.css)
+```css
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
     color: #333;
 }
 
 header {
-    background-color: #0044cc;
+    background: #0056b3;
     color: white;
-    padding: 1rem 2rem;
+    padding: 15px 0;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    color: white;
+    padding: 30px;
+    background: #e9ecef;
     text-align: center;
-    padding: 4rem 0;
 }
 
-.hero h2 {
-    font-size: 3rem;
-}
-
-.cta {
-    background-color: #ff5500;
-    padding: 0.5rem 1.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    display: inline-block;
-}
-
-.actualites {
-    padding: 2rem;
-}
-
-.news-container {
+.features {
     display: flex;
-    gap: 2rem;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
-.news-container article {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.news, .forum, .contact {
+    padding: 20px;
+    background: white;
+    margin: 20px;
 }
 
 footer {
-    background-color: #222;
-    color: white;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 10px 0;
+    background: #0056b3;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #004494;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
